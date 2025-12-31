@@ -5,12 +5,12 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 function Navbar() {
   return (
     <nav className='nav'>
-      <Link to="/" className='logoLink'>
+      <Link to="/" className='logo-link'>
         <h1 className='logo'>#VANLIFE</h1>
       </Link>
       <div>
-        <Link to="/about" className='navLink'>About</Link>
-        <Link to="/vans" className='navLink'>Vans</Link>
+        <Link to="/about" className='nav-link'>About</Link>
+        <Link to="/vans" className='nav-link'>Vans</Link>
       </div>
     </nav>
   )
@@ -18,10 +18,16 @@ function Navbar() {
 
 function Home() {
   return (
-    <main>
-      <h1>You got the travel plans, we got the travel vans.</h1>
-
-
+    <main className='home-main'>
+      <div className='overlay'></div>
+      <div className='home-content'>
+        <h1 className='hero-title'>You got the travel plans, we got the travel vans.</h1>
+        <p className='hero-text'>
+          Add adventure to your life by joining the #vanlife movement.
+          Rent the perfect van to make your perfect road trip.
+        </p>
+        <button className='cta-btn'>Find your van</button>
+      </div>
       <footer className='footer'>
         Ⓒ 2022 #VANLIFE
       </footer>
