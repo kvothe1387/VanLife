@@ -39,3 +39,14 @@ body {
   margin-left: 20px;
   cursor: pointer;
 }
+
+.footer {
+  position: relative;
+  z-index: 2;
+  background-color: #252525;
+  color: #AAA;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  font-weight: 500;
+}

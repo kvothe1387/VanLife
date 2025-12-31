@@ -18,13 +18,26 @@ function Navbar() {
 
 function Home() {
   return (
-    <h1>You got the travel plans, we got the travel vans.</h1>
+    <main>
+      <h1>You got the travel plans, we got the travel vans.</h1>
+
+
+      <footer className='footer'>
+        Ⓒ 2022 #VANLIFE
+      </footer>
+    </main>
   )
 }
 
 function About() {
   return (
-    <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
+    <main>
+      <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
+
+      <footer className='footer'>
+        Ⓒ 2022 #VANLIFE
+      </footer>
+    </main>
   )
 }
 
