@@ -6,8 +6,36 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: Inter;
+  min-height: 100vh;
 }
 
-nav>a {
+.nav {
+  height: 111px;
+  background-color: #FFF7ED;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 26px;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 25.35px;
+  margin: 0;
+  color: #000;
+  cursor: pointer;
+}
+
+.logoLink {
   text-decoration: none;
+}
+
+.navLink {
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #4D4D4D;
+  margin-left: 20px;
+  cursor: pointer;
 }
