@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home-pg';
+import About from './About-pg';
+
 
 function Navbar() {
   return (
@@ -16,34 +19,11 @@ function Navbar() {
   )
 }
 
-function Home() {
+function Footer() {
   return (
-    <main className='home-main'>
-      <div className='overlay'></div>
-      <div className='home-content'>
-        <h1 className='hero-title'>You got the travel plans, we got the travel vans.</h1>
-        <p className='hero-text'>
-          Add adventure to your life by joining the #vanlife movement.
-          Rent the perfect van to make your perfect road trip.
-        </p>
-        <button className='cta-btn'>Find your van</button>
-      </div>
-      <footer className='footer'>
-        Ⓒ 2022 #VANLIFE
-      </footer>
-    </main>
-  )
-}
-
-function About() {
-  return (
-    <main>
-      <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
-
-      <footer className='footer'>
-        Ⓒ 2022 #VANLIFE
-      </footer>
-    </main>
+    <footer className='footer'>
+      Ⓒ 2026 #VANLIFE
+    </footer>
   )
 }
 
@@ -55,6 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
