@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <main className='home-main'>
+    <div className='home-main'>
       <div className='overlay'></div>
       <div className='home-content'>
         <h1 className='hero-title'>You got the travel plans, we got the travel vans.</h1>
@@ -12,6 +12,6 @@ export default function Home() {
         </p>
         <button className='cta-btn'>Find your van</button>
       </div>
-    </main>
+    </div>
   )
 }

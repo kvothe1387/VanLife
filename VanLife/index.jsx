@@ -1,21 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home from './Home-pg';
-import About from './About-pg';
+import Home from './pages/Home';
+import About from './pages/About';
 
 
 function Navbar() {
   return (
-    <nav className='nav'>
-      <Link to="/" className='logo-link'>
-        <h1 className='logo'>#VANLIFE</h1>
-      </Link>
-      <div>
-        <Link to="/about" className='nav-link'>About</Link>
-        <Link to="/vans" className='nav-link'>Vans</Link>
-      </div>
-    </nav>
+    <header>
+      <nav className='nav'>
+        <Link to="/" className='logo-link'>
+          <h1 className='logo'>#VANLIFE</h1>
+        </Link>
+        <div>
+          <Link to="/about" className='nav-link'>About</Link>
+          <Link to="/vans" className='nav-link'>Vans</Link>
+        </div>
+      </nav>
+    </header>
   )
 }
 
