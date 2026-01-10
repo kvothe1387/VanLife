@@ -19,7 +19,7 @@ export default function Vans() {
       >
         <img src={van.imageUrl} alt={`Image of ${van.name}`} />
         <div className="van-info">
-          <p>{van.name}</p>
+          <h2>{van.name}</h2>
           <p>${van.price}<span>/day</span></p>
         </div>
         <i className={`van-type ${van.type} selected`}>{van.type}</i>
