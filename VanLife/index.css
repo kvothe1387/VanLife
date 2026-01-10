@@ -9,35 +9,31 @@ body {
   font-family: 'Inter';
 }
 
-/* Navbar */
-.nav {
+header {
   height: 110px;
-  background-color: #FFF7ED;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 26px;
+  padding-block: 10px;
 }
 
-.logo {
+header .site-logo {
+  color: black;
+  margin-right: auto;
+  text-transform: uppercase;
   font-weight: 900;
-  font-size: 25.35px;
-  margin: 0;
-  color: #000;
-  cursor: pointer;
+  font-size: 25px;
 }
 
-.logo-link {
-  text-decoration: none;
-}
-
-.nav-link {
-  font-weight: 600;
-  font-size: 16px;
+header a {
   text-decoration: none;
   color: #4D4D4D;
-  margin-left: 20px;
-  cursor: pointer;
+  font-weight: 600;
+  padding: 5px 20px;
+}
+
+header a:hover {
+  color: #161616;
+  text-decoration: underline;
 }
 
 .link-button {
@@ -57,13 +53,8 @@ body {
   transform: translate(1px, 1px);
 }
 
-header a:hover {
-  color: #161616;
-  text-decoration: underline;
-}
-
-/* Home Page */
-.home-main {
+/*** HOME PAGE ***/
+.home-container {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./img/home-hero.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -72,53 +63,36 @@ header a:hover {
   min-height: 350px;
   color: white;
   padding: 45px 23px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  color: white;
 }
 
-.home-content {
-  position: relative;
-  z-index: 2;
-  padding: 45px 23px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-title {
-  font-size: 36px;
-  font-weight: 800;
+.home-container h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
   line-height: 42px;
-  margin-bottom: 16px;
-  margin-top: 0;
 }
 
-.hero-text {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 32px;
-  max-width: 95%;
+.home-container p {
+  line-height: 24px;
 }
 
-.cta-btn {
+.home-container a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   background-color: #FF8C38;
-  color: white;
   border: none;
-  padding: 16px 32px;
-  font-size: 16px;
-  font-weight: 600;
+  width: 100%;
+  margin-top: 27px;
+  padding-block: .75rem;
+  color: white;
+  font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  transition: background-color .2s;
+  transition: transform .1s ease-in-out;
 }
 
-.cta-btn:hover {
-  background-color: #E67E2C;
+.home-container a:hover {
+  transform: translate(1px, 1px);
 }
 
 /* About Page */
