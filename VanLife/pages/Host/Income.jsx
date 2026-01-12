@@ -2,6 +2,6 @@ import React from "react"
 
 export default function Income() {
   return (
-    <h1>Host Dashboard here</h1>
+    <h1>Income Here</h1>
   )
 }
