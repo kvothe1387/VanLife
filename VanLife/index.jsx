@@ -12,14 +12,6 @@ import Reviews from './pages/Host/Reviews'
 
 import "./server"
 
-function Footer() {
-  return (
-    <footer className='footer'>
-      Ⓒ 2026 #VANLIFE
-    </footer>
-  )
-}
-
 function App() {
   return (
     <BrowserRouter>
@@ -34,7 +26,6 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
         </Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
   )
 }

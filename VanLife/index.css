@@ -135,7 +135,7 @@ header a:hover {
   border-radius: 10px;
 }
 
-.footer {
+footer {
   position: relative;
   z-index: 2;
   background-color: #252525;
