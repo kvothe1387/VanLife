@@ -1,13 +1,13 @@
 import React from "react"
-import {Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function HostVans() {
     const [vans, setVans] = React.useState([])
-    
+
     React.useEffect(() => {
-      fetch('/api/host/vans')
-        .then(res => res.json())
-        .then(data => setVans(data.vans))
+        fetch('/api/host/vans')
+            .then(res => res.json())
+            .then(data => setVans(data.vans))
     }, [])
 
     const hostVansEls = vans.map(van => (
@@ -27,7 +27,7 @@ export default function HostVans() {
     ))
 
     return (
-      <section>
+        <section>
             <h1 className="host-vans-title">Your listed vans</h1>
             <div className="host-vans-list">
                 {
@@ -36,8 +36,8 @@ export default function HostVans() {
                             {hostVansEls}
                         </section>
                     ) : (
-                            <h2>Loading...</h2>
-                        )
+                        <h2>Loading...</h2>
+                    )
                 }
             </div>
         </section>
