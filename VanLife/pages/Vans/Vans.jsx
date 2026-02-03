@@ -21,8 +21,12 @@ export default function Vans() {
   const vanElements = displayedVans.map(van => (
     <div key={van.id} className="van-tile">
       <Link to={van.id}
-        aria-label={`View details for ${van.name}, 
-          priced at $${van.price} per day`}
+        state={{
+          search: `?${searchParams.toString()}`,
+          type: typeFilter
+        }}
+        aria-label={`View details for ${van.name},
+      priced at $${van.price} per day`}
       >
         <img src={van.imageUrl} alt={`Image of ${van.name}`} />
         <div className="van-info">
@@ -31,7 +35,7 @@ export default function Vans() {
         </div>
         <i className={`van-type ${van.type} selected`}>{van.type}</i>
       </Link>
-    </div>
+    </div >
   ))
 
   function handleFilterChange(key, value) {
