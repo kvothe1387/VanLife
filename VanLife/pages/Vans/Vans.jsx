@@ -21,7 +21,6 @@ export default function Vans() {
       } finally {
         setLoading(false)
       }
-
     }
     loadVans()
   }, [])
