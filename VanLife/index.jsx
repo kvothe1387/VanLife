@@ -17,6 +17,7 @@ import HostVanPhotos from './pages/Host/HostVanPhotos';
 import HostVanPricing from './pages/Host/HostVanPricing';
 import NotFound from './pages/NotFound';
 import Error from "./components/Error"
+import Login from './pages/Login'
 
 import "./server"
 
