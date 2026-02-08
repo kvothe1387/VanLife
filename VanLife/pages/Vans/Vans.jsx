@@ -46,7 +46,7 @@ export default function Vans() {
         </div>
         <i className={`van-type ${van.type} selected`}>{van.type}</i>
       </Link>
-    </div >
+    </div>
   ))
 
   function handleFilterChange(key, value) {
