@@ -7,14 +7,14 @@ export default function Reviews() {
     {
       rating: 5,
       name: "Atlas",
-      date: "January 3, 2026",
+      date: "January 25, 2026",
       text: "The beach bum is such an awesome van! Such a comfortable trip. We had it for 2 weeks and there was not a single issue. Super clean when we picked it up and the host is very comfortable and understanding. Highly recommend!",
       id: "1",
     },
     {
       rating: 5,
-      name: "Sandy",
-      date: "December 12, 2025",
+      name: "Lauren",
+      date: "February 1, 2026",
       text: "This is our third time using the Modest Explorer for our travels and we love it! No complaints, absolutely perfect!",
       id: "2",
     },
